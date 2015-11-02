@@ -4,24 +4,21 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Animation Examples</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var ball  = document.getElementById('ball');
+		document.addEventListener('click', function(ballEvent) {
+			ball.style.transform = 'translateY(' + ballEvent.clientY + 'px)';
+			ball.style.transform += 'translateX(' + ballEvent.clientX + 'px)';
+		});
+	});
+	</script>
 </head>
 <body>
-	<div id="timing">
-		<div id="ease-in" class="transform-box">Easy in
-		</div>
-		<div id="ease-out" class="transform-box">Easin out cuh
-		</div>
-		<div id="ease" class="transform-box">Regular ease
-		</div>
-		<div id="ease-in-out" class="transform-box">Ease-in-out
-		</div>
-		<div id="linear" class="transform-box">Linear
-		</div>
-		<div id="custom" class="transform-box">Custom
-		</div>
-		<div id="awesome" class="transform-box">Awesome
-		</div>
-	</div>	
+	<p>Bounce me!</p>
+	<div id="ball">
+	</div>
 </body>
 </html>
