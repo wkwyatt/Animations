@@ -8,19 +8,17 @@
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript">
 	$(document).ready(function() {
-		var ball  = $('#ball');
-		$(document).click(function(ballEvent) {
+		var skew  = $('#skew-me');
+		$(document).click(function(thisEvent) {
 			/* Act on the event */
-			ball.css({
-				transform: 'translateY('+ballEvent.clientY+'px) translateX('+ballEvent.clientX+'px)'
-			});
+			skew.css('transform', 'skew('+thisEvent.clientX+'deg, '+thisEvent.clientY+'deg)');
 		});
 	});
 	</script>
 </head>
 <body>
-	<p>Bounce me!</p>
-	<div id="ball">
+	<p>Skew me!</p>
+	<div id="skew-me">
 	</div>
 </body>
 </html>
