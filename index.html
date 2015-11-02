@@ -11,7 +11,7 @@
 		var skew  = $('#skew-me');
 		$(document).click(function(thisEvent) {
 			/* Act on the event */
-			skew.css('transform', 'skew('+thisEvent.clientX+'deg, '+thisEvent.clientY+'deg)');
+			skew.toggleClass('skew-this');
 		});
 	});
 	</script>

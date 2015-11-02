@@ -7,3 +7,7 @@
 	left: 450px;
 	transition: transform 0.5s;
 }
+
+.skew-this {
+	transform: skewX(50deg);
+}
