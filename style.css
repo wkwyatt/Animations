@@ -1,0 +1,90 @@
+#timing {
+	position: relative;
+	width: 560px;
+	border:2px solid #babbab;
+	padding: 10px;
+}
+
+#timing:hover .transform-box {
+	transform: rotate(360deg);
+	margin-left: 420px;
+	border-radius: 40px;
+}
+
+.transform-box {
+	font-size: 12px;
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background-color: #d3d;
+}
+
+#ease {
+	/*To make it apply to all browsers*/
+	-webkit-transition: all 4s ease;
+	-moz-transition: all 4s ease;
+	-o-transition: all 4s ease;
+	/*-------------*/
+	transition: all 4s ease;
+	border: 1px solid #f00;
+}
+
+#ease-in {
+	/*To make it apply to all browsers*/
+	-webkit-transition: all 4s ease-in;
+	-moz-transition: all 4s ease-in;
+	-o-transition: all 4s ease-in;
+	/*-------------*/
+	transition: all 4s ease-in;
+	border: 1px solid #22f;
+}
+
+#ease-out {
+	/*To make it apply to all browsers*/
+	-webkit-transition: all 4s ease-out;
+	-moz-transition: all 4s ease-out;
+	-o-transition: all 4s ease-out;
+	/*-------------*/
+	transition: all 4s ease-out;
+	border: 1px solid #e22;
+}
+
+#ease-in-out {
+	/*To make it apply to all browsers*/
+	-webkit-transition: all 4s ease-in-out;
+	-moz-transition: all 4s ease-in-out;
+	-o-transition: all 4s ease-in-out;
+	/*-------------*/
+	transition: all 4s ease-in-out;
+	border: 1px solid #e22;
+}
+
+#linear {
+	/*To make it apply to all browsers*/
+	-webkit-transition: all 4s ease-out;
+	-moz-transition: all 4s ease-out;
+	-o-transition: all 4s ease-out;
+	/*-------------*/
+	transition: all 4s ease-out;
+	border: 1px solid #e22;
+}
+
+#custom {
+	/*To make it apply to all browsers*/
+	-webkit-transition: all 4s ease-out;
+	-moz-transition: all 4s ease-out;
+	-o-transition: all 4s ease-out;
+	/*-------------*/
+	transition: all 4s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+	border: 1px solid #e22;
+}
+
+#awesome {
+	/*To make it apply to all browsers*/
+	-webkit-transition: all 4s ease-out;
+	-moz-transition: all 4s ease-out;
+	-o-transition: all 4s ease-out;
+	/*-------------*/
+	transition: all 4s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+	border: 1px dotted #e22;
+}
