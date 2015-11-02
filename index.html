@@ -8,10 +8,12 @@
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript">
 	$(document).ready(function() {
-		var ball  = document.getElementById('ball');
-		document.addEventListener('click', function(ballEvent) {
-			ball.style.transform = 'translateY(' + ballEvent.clientY + 'px)';
-			ball.style.transform += 'translateX(' + ballEvent.clientX + 'px)';
+		var ball  = $('#ball');
+		$(document).click(function(ballEvent) {
+			/* Act on the event */
+			ball.css({
+				transform: 'translateY('+ballEvent.clientY+'px) translateX('+ballEvent.clientX+'px)'
+			});
 		});
 	});
 	</script>
